@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -8,12 +10,22 @@ body {
   font-weight: 300;
   box-sizing: border-box;
 }
+div.main_heading{
+  width: 100%;
+  background-color: grey !important;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  color: #000000 !important;
+  font-size: 50px;
+  /* display: none; */
+}
+
 div .column {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  /* flex-direction: row; */
 }
 .column {
   display: flex;
@@ -22,7 +34,6 @@ div .column {
   width: 25%;
   padding: 0 10px;
   margin: 3%;
-  /* justify-content: space-around; */
   align-items: center;
 }
 
@@ -88,5 +99,76 @@ div .column {
     justify-items: center;
     display: block;
     align-items: center;
+  }
+  div.main_heading{
+    width: 100%;
+    background-color:grey;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    color: white !important;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hover14 img {
+    width: 300px;
+    height: 18rem;
+    object-fit: cover;
+  }
+  .hover14 {
+    box-shadow: 4px 4px 10px rgb(172, 161, 161);
+    margin: 7px;
+    padding: 5%;
+  }
+  .column {
+    float: left;
+    width: 200px;
+    padding: 0 10px;
+    margin-left: 25%;
+    justify-content: center;
+    justify-items: center;
+    display: block;
+    align-items: center;
+  }
+  div.main_heading{
+    width: 100%;
+    background-color:grey;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    color: black !important;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .hover14 img {
+    width: 280px;
+    height: 18rem;
+    object-fit: cover;
+  }
+  .hover14 {
+    box-shadow: 4px 4px 10px rgb(172, 161, 161);
+    margin: 7px;
+    padding: 5%;
+  }
+  .column {
+    float: left;
+    width: 180px;
+    padding: 0 10px;
+    margin-left: 22%;
+    justify-content: center;
+    justify-items: center;
+    display: block;
+    align-items: center;
+  }
+  div.main_heading{
+    width: 100vw;
+    background-color:grey;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    color: white !important;
+    font-size: 20px;
   }
 }
